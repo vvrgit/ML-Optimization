@@ -9,4 +9,5 @@ lb=[0;0];
 ub=[inf;inf];
 options = optimoptions('linprog','Algorithm','interior-point');
 x=linprog(f,A,b,Aeq,beq,lb,ub,[],options);
+x
 %'dual-simplex',  'interior-point-legacy',  or  'interior-point'.
